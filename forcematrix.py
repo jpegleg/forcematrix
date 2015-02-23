@@ -1,9 +1,7 @@
 #!/usr/bin/python
 
 import math
-import json
 import sys
-import decimal
 import time
 
 # This thing, F O R C E M A T R I X, is just a calculator function code snippet.
