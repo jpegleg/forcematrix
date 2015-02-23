@@ -1,0 +1,15 @@
+forcematrix, a code snippet
+
+This thing, F O R C E M A T R I X, is just a calculator function code snippet.
+Take an input file called /usr/local/lib/forcematrix.in and have it contain line delimited base 10 numbers.
+F O R C E M A T R I X will run a series of simple calculations on numbers 1 through the value in the file.
+If you use multiple lines, you will run the calulation again, 1 through the next value. The values from the file are F O R C E M A T R I X run ranges.
+
+Example simple usage:
+echo 9999 > /usr/local/lib/forcematrix.in
+ /usr/local/scripts/forcematrix.py
+
+Example advanced usage:
+for x in {1..999}; do echo "$x" > /usr/local/lib/forcematrix.in &&
+/usr/local/script/forcematrix.py > /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.out;
+done
