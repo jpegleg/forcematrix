@@ -17,9 +17,8 @@ import time
 # /usr/local/scripts/forcematrix.py
 #
 # Example advanced usage:
-# mkfifo /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.fifo 
 # for x in {1..999}; do echo "$x" ; done >> /usr/local/lib/forcematrix.in &&
-# /usr/local/script/forcematrix.py > /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.fifo
+# /usr/local/script/forcematrix.py > /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.out
 
 f = (open("/usr/local/lib/forcematrix.in"))
 
