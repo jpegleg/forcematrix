@@ -33,6 +33,6 @@ for line in f:
   for x in range(1, y+1):
         print repr(x), repr(x*x), repr(x*y), repr(x^10), repr(x^y), repr(x*60), repr(x*24), repr(x*7), repr(x*12), repr(x*x*y), repr(x*y*y), repr(x*x*y*y), repr(x*x*x^y), repr(x*x*x*x^y^y),repr(x**2), repr(x**3), repr(x**4)
 print ' '
-print 'Your machine just crunched out the following operations for each range from the input file in',
+print 'forcematrix just crunched out the following operations for each range from the input file in',
 print time.clock() - start_time, "seconds"
 print 'x x*x x*y x^10 x^y x*60 x*24 x*7 x*12 x*x*y x*y*y x*x*y*y x*x*x^y x*x*x*x^y^y x**2 x**3 x**4'
