@@ -10,6 +10,6 @@ echo 9999 > /usr/local/lib/forcematrix.in
  /usr/local/scripts/forcematrix.py
 
 Example advanced usage:
-for x in {1..999}; do echo "$x" > /usr/local/lib/forcematrix.in &&
+for x in {1..99999}; do echo "$x" > /usr/local/lib/forcematrix.in &&
 /usr/local/scripts/forcematrix.py > /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.out;
 done
