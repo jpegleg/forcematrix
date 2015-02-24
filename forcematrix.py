@@ -36,4 +36,6 @@ for line in f:
 print ' '
 print 'forcematrix just crunched out the following operations for each range from the input file in',
 print time.clock() - start_time, "seconds"
+# Put whatever operations you want in here. This is just a set I'm using for load testing. 
+# Try using just XOR or just multiplication and see how the timing compairs.
 print 'x x*x x*y x^10 x^y x*60 x*24 x*7 x*12 x*x*y x*y*y x*x*y*y x*x*x^y x*x*x*x^y^y x**2 x**3 x**4'
