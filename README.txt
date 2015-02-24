@@ -9,7 +9,11 @@ Example simple usage:
 echo 9999 > /usr/local/lib/forcematrix.in
  /usr/local/scripts/forcematrix.py
 
-Example advanced (heavy disk, heavy load) usage:
+You will find just running the script will print the output to the terminal. 
+You will also find that printing the output takes far longer than the calculation.
+I don't use it with standard out, but rather redirect the output to files.
+
+Example advanced (warning: heavy disk usage) usage:
 for x in {1..99999}; do echo "$x" > /usr/local/lib/forcematrix.in &&
 /usr/local/scripts/forcematrix.py > /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.out;
 done
