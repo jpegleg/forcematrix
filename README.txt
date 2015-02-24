@@ -9,7 +9,10 @@ Example simple usage:
 echo 9999 > /usr/local/lib/forcematrix.in
  /usr/local/scripts/forcematrix.py
 
-Example advanced usage:
+Example advanced (heavy disk, heavy load) usage:
 for x in {1..99999}; do echo "$x" > /usr/local/lib/forcematrix.in &&
 /usr/local/scripts/forcematrix.py > /mnt/hadoop2/node-a-in-raw-matrix/forcematrix.out;
 done
+
+This is a neat test for python operations timing:
+while true; do /usr/local/scripts/forcematrix.py > force.tmp && grep machine force.tmp | rev | awk '{print $2}' | rev >> pytime.log; done
